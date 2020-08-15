@@ -1,4 +1,4 @@
-update=14.08.2020 21:25:46
+update=15/08/2020 16:01:26
 version=1
 last_client=kicad
 [general]
@@ -237,7 +237,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.3
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -281,7 +281,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
 Name=GND
-Clearance=0.2
+Clearance=0.3
 TrackWidth=1
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -292,7 +292,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/5]
 Name=PWM
-Clearance=0.2
+Clearance=0.3
 TrackWidth=0.5
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -303,7 +303,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/6]
 Name=TACH
-Clearance=0.2
+Clearance=0.3
 TrackWidth=0.5
 ViaDiameter=0.8
 ViaDrill=0.4
