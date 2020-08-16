@@ -586,4 +586,186 @@ Wire Notes Line
 	4850 3000 4850 550 
 Wire Notes Line
 	4850 550  550  550 
+$Comp
+L power:GND #PWR0103
+U 1 1 5F39D41C
+P 6700 2300
+F 0 "#PWR0103" H 6700 2050 50  0001 C CNN
+F 1 "GND" H 6705 2127 50  0000 C CNN
+F 2 "" H 6700 2300 50  0001 C CNN
+F 3 "" H 6700 2300 50  0001 C CNN
+	1    6700 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x17_Odd_Even J13
+U 1 1 5F3A8D6B
+P 7000 1700
+F 0 "J13" H 7050 2717 50  0000 C CNN
+F 1 "Front Panel" H 7050 2626 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x17_P1.27mm_Vertical" H 7000 1700 50  0001 C CNN
+F 3 "~" H 7000 1700 50  0001 C CNN
+F 4 "Harwin M50-3551742" H 7000 1700 50  0001 C CNN "Part"
+	1    7000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 5F3B1E0C
+P 9600 1650
+F 0 "U1" H 9600 669 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 9600 760 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 9600 500 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 7750 500 50  0001 C CNN
+	1    9600 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5F3C5F82
+P 9600 850
+F 0 "#PWR0121" H 9600 600 50  0001 C CNN
+F 1 "GND" H 9605 677 50  0000 C CNN
+F 2 "" H 9600 850 50  0001 C CNN
+F 3 "" H 9600 850 50  0001 C CNN
+	1    9600 850 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6800 1100 0    50   Input ~ 0
+PWR_LED
+Wire Wire Line
+	6800 2100 6800 2200
+Wire Wire Line
+	6800 2200 6800 2300
+Connection ~ 6800 2200
+Wire Wire Line
+	6800 2300 6800 2400
+Connection ~ 6800 2300
+Connection ~ 6800 2400
+Wire Wire Line
+	6800 2400 6800 2500
+Wire Wire Line
+	6700 2300 6800 2300
+Text GLabel 7300 1400 2    50   Input ~ 0
+CLED_SER
+Text GLabel 7300 1000 2    50   Input ~ 0
+CLED_VCC
+$Comp
+L power:GND #PWR?
+U 1 1 5F3CE2DC
+P 6800 900
+F 0 "#PWR?" H 6800 650 50  0001 C CNN
+F 1 "GND" H 6805 727 50  0000 C CNN
+F 2 "" H 6800 900 50  0001 C CNN
+F 3 "" H 6800 900 50  0001 C CNN
+	1    6800 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3CEC27
+P 6800 1200
+F 0 "#PWR?" H 6800 950 50  0001 C CNN
+F 1 "GND" H 6805 1027 50  0000 C CNN
+F 2 "" H 6800 1200 50  0001 C CNN
+F 3 "" H 6800 1200 50  0001 C CNN
+	1    6800 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3CEED3
+P 6800 1400
+F 0 "#PWR?" H 6800 1150 50  0001 C CNN
+F 1 "GND" H 6805 1227 50  0000 C CNN
+F 2 "" H 6800 1400 50  0001 C CNN
+F 3 "" H 6800 1400 50  0001 C CNN
+	1    6800 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3CF6D7
+P 6800 1700
+F 0 "#PWR?" H 6800 1450 50  0001 C CNN
+F 1 "GND" H 6805 1527 50  0000 C CNN
+F 2 "" H 6800 1700 50  0001 C CNN
+F 3 "" H 6800 1700 50  0001 C CNN
+	1    6800 1700
+	0    1    1    0   
+$EndComp
+Text GLabel 7300 1300 2    50   Input ~ 0
+CLED_RCLK
+Text GLabel 7300 1200 2    50   Input ~ 0
+CLED_SRCLK
+Text GLabel 6800 1500 0    50   Input ~ 0
+CLED_SRCLR_n
+Wire Wire Line
+	7300 2100 7300 2200
+Wire Wire Line
+	7300 2200 7300 2300
+Connection ~ 7300 2200
+Wire Wire Line
+	7300 2300 7300 2400
+Connection ~ 7300 2300
+Wire Wire Line
+	7300 2400 7300 2500
+Connection ~ 7300 2400
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3D4B59
+P 7300 2300
+F 0 "#PWR?" H 7300 2150 50  0001 C CNN
+F 1 "+5V" V 7315 2428 50  0000 L CNN
+F 2 "" H 7300 2300 50  0001 C CNN
+F 3 "" H 7300 2300 50  0001 C CNN
+	1    7300 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3D5D72
+P 9700 2450
+F 0 "#PWR?" H 9700 2300 50  0001 C CNN
+F 1 "+5V" H 9715 2623 50  0000 C CNN
+F 2 "" H 9700 2450 50  0001 C CNN
+F 3 "" H 9700 2450 50  0001 C CNN
+	1    9700 2450
+	-1   0    0    1   
+$EndComp
+Text Notes 7600 2350 0    50   ~ 0
+Guessed
+Text GLabel 6800 1000 0    50   Input ~ 0
+PWR_SW
+Text Notes 6150 1050 0    50   ~ 0
+to GND
+Text GLabel 7300 1100 2    50   Input ~ 0
+SRVID_SW
+Text Notes 7750 1100 0    50   ~ 0
+to GND
+Text GLabel 6800 1600 0    50   Input ~ 0
+SRVID_LED
+Text Notes 5900 1150 0    50   ~ 0
+apply Voltage
+Text Notes 5950 1650 0    50   ~ 0
+apply GND
+Text GLabel 6800 1800 0    50   Input ~ 0
+LANA_LED
+Text GLabel 7300 1700 2    50   Input ~ 0
+LANB_LED
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F3DAB15
+P 9500 2450
+F 0 "#PWR?" H 9500 2300 50  0001 C CNN
+F 1 "+3.3V" H 9515 2623 50  0000 C CNN
+F 2 "" H 9500 2450 50  0001 C CNN
+F 3 "" H 9500 2450 50  0001 C CNN
+	1    9500 2450
+	-1   0    0    1   
+$EndComp
+Text GLabel 7300 900  2    50   Input ~ 0
+Q19
+Text GLabel 7300 1800 2    50   Input ~ 0
+U6_??
 $EndSCHEMATC
