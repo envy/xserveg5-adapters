@@ -1,4 +1,4 @@
-update=16/08/2020 20:13:13
+update=26/08/2020 14:57:49
 version=1
 last_client=kicad
 [general]
@@ -259,8 +259,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=3.3V
-Clearance=0.5
-TrackWidth=2
+Clearance=0.25
+TrackWidth=0.5
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -280,6 +280,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
+Name=5VA
+Clearance=0.25
+TrackWidth=0.5
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/5]
 Name=GND
 Clearance=0.25
 TrackWidth=1
@@ -290,7 +301,7 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/5]
+[pcbnew/Netclasses/6]
 Name=PWM
 Clearance=0.3
 TrackWidth=0.5
@@ -301,7 +312,7 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/6]
+[pcbnew/Netclasses/7]
 Name=TACH
 Clearance=0.3
 TrackWidth=0.5
