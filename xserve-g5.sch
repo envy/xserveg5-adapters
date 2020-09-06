@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x05_Top_Bottom J2
 U 1 1 5F350FE6
-P 2750 1150
-F 0 "J2" H 2800 1567 50  0000 C CNN
-F 1 "FAN_LEFT" H 2800 1476 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical" H 2750 1150 50  0001 C CNN
-F 3 "~" H 2750 1150 50  0001 C CNN
-	1    2750 1150
+P 2950 1150
+F 0 "J2" H 3000 1567 50  0000 C CNN
+F 1 "FAN_LEFT" H 3000 1476 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical" H 2950 1150 50  0001 C CNN
+F 3 "~" H 2950 1150 50  0001 C CNN
+	1    2950 1150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -121,8 +121,6 @@ Connection ~ 850  2050
 Wire Wire Line
 	850  2050 900  2050
 Connection ~ 1100 1300
-NoConn ~ 1100 900 
-NoConn ~ 1600 900 
 $Comp
 L power:+12V #PWR0106
 U 1 1 5F360DF0
@@ -155,37 +153,37 @@ $EndComp
 $Comp
 L power:+12V #PWR0108
 U 1 1 5F36F815
-P 3300 1150
-F 0 "#PWR0108" H 3300 1000 50  0001 C CNN
-F 1 "+12V" H 3315 1323 50  0000 C CNN
-F 2 "" H 3300 1150 50  0001 C CNN
-F 3 "" H 3300 1150 50  0001 C CNN
-	1    3300 1150
+P 3500 1150
+F 0 "#PWR0108" H 3500 1000 50  0001 C CNN
+F 1 "+12V" H 3515 1323 50  0000 C CNN
+F 2 "" H 3500 1150 50  0001 C CNN
+F 3 "" H 3500 1150 50  0001 C CNN
+	1    3500 1150
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 5F370055
-P 2250 1150
-F 0 "#PWR0109" H 2250 900 50  0001 C CNN
-F 1 "GND" H 2255 977 50  0000 C CNN
-F 2 "" H 2250 1150 50  0001 C CNN
-F 3 "" H 2250 1150 50  0001 C CNN
-	1    2250 1150
+P 2450 1150
+F 0 "#PWR0109" H 2450 900 50  0001 C CNN
+F 1 "GND" H 2455 977 50  0000 C CNN
+F 2 "" H 2450 1150 50  0001 C CNN
+F 3 "" H 2450 1150 50  0001 C CNN
+	1    2450 1150
 	0    1    1    0   
 $EndComp
-Text GLabel 3050 950  2    50   Input ~ 0
+Text GLabel 3250 950  2    50   Input ~ 0
 TACH1
-Text GLabel 3050 1050 2    50   Input ~ 0
+Text GLabel 3250 1050 2    50   Input ~ 0
 TACH2
-Text GLabel 3050 1250 2    50   Input ~ 0
+Text GLabel 3250 1250 2    50   Input ~ 0
 TACH3
-Text GLabel 3050 1350 2    50   Input ~ 0
+Text GLabel 3250 1350 2    50   Input ~ 0
 TACH4
 Wire Wire Line
-	3050 1150 3300 1150
+	3250 1150 3500 1150
 Wire Wire Line
-	2550 1150 2250 1150
+	2750 1150 2450 1150
 Text GLabel 2100 3400 2    50   Input ~ 0
 TACH5
 Text GLabel 2100 3500 2    50   Input ~ 0
@@ -235,13 +233,13 @@ F 3 "" H 1250 2050 50  0001 C CNN
 $EndComp
 Text GLabel 1450 2050 3    50   Input ~ 0
 TACH1
-Text GLabel 2550 950  0    50   Input ~ 0
+Text GLabel 2750 950  0    50   Input ~ 0
 PWM1
-Text GLabel 2550 1050 0    50   Input ~ 0
+Text GLabel 2750 1050 0    50   Input ~ 0
 PWM2
-Text GLabel 2550 1250 0    50   Input ~ 0
+Text GLabel 2750 1250 0    50   Input ~ 0
 PWM3
-Text GLabel 2550 1350 0    50   Input ~ 0
+Text GLabel 2750 1350 0    50   Input ~ 0
 PWM4
 Text GLabel 1600 3400 0    50   Input ~ 0
 PWM5
@@ -353,7 +351,7 @@ TACH3
 Text GLabel 3350 2250 3    50   Input ~ 0
 PWM3
 Text GLabel 3450 2650 3    50   Input ~ 0
-PWM1
+PWM2
 Wire Wire Line
 	3350 2250 3350 2050
 $Comp
@@ -398,7 +396,7 @@ TACH4
 Text GLabel 4250 2250 3    50   Input ~ 0
 PWM4
 Text GLabel 4350 2650 3    50   Input ~ 0
-PWM1
+PWM3
 Wire Wire Line
 	4250 2250 4250 2050
 $Comp
@@ -515,7 +513,7 @@ TACH7
 Text GLabel 3400 4650 3    50   Input ~ 0
 PWM7
 Text GLabel 3500 5050 3    50   Input ~ 0
-PWM5
+PWM6
 Wire Wire Line
 	3400 4650 3400 4450
 $Comp
@@ -532,16 +530,6 @@ $EndComp
 Wire Wire Line
 	3500 4450 3400 4450
 Connection ~ 3400 4450
-NoConn ~ 1600 1000
-NoConn ~ 1600 1100
-Text Notes 1650 1000 0    50   ~ 0
-3.3V ??
-Text Notes 1650 1100 0    50   ~ 0
-3.3V ??
-Text Notes 1650 900  0    50   ~ 0
-??
-Text Notes 1000 900  0    50   ~ 0
-??
 Wire Wire Line
 	1150 3600 1200 3600
 Wire Wire Line
@@ -696,60 +684,60 @@ Text GLabel 7300 1800 2    50   Input ~ 0
 CLED_VCC
 Text GLabel 6800 1300 0    50   Input ~ 0
 CLED_VCC
-Text GLabel 5050 1000 3    50   Input ~ 0
+Text GLabel 5100 950  3    50   Input ~ 0
 PWR_LED
-Text GLabel 5150 1000 3    50   Input ~ 0
+Text GLabel 5200 950  3    50   Input ~ 0
 PWR_SW
-Text GLabel 5250 1000 3    50   Input ~ 0
+Text GLabel 5300 950  3    50   Input ~ 0
 SRVID_LED
-Text GLabel 5450 1000 3    50   Input ~ 0
+Text GLabel 5500 950  3    50   Input ~ 0
 LANA_LED
-Text GLabel 5550 1000 3    50   Input ~ 0
+Text GLabel 5600 950  3    50   Input ~ 0
 LANB_LED
 $Comp
-L Connector_Generic:Conn_01x06 J14
+L Connector_Generic:Conn_01x07 J14
 U 1 1 5F3CC5EE
-P 5250 800
-F 0 "J14" V 5214 412 50  0000 R CNN
-F 1 "SYSTEM_PINS" V 5123 412 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 5250 800 50  0001 C CNN
-F 3 "~" H 5250 800 50  0001 C CNN
-	1    5250 800 
+P 5400 750
+F 0 "J14" V 5364 362 50  0000 R CNN
+F 1 "SYSTEM_PINS" V 5273 362 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal" H 5400 750 50  0001 C CNN
+F 3 "~" H 5400 750 50  0001 C CNN
+	1    5400 750 
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5350 1000 3    50   Input ~ 0
+Text GLabel 5400 950  3    50   Input ~ 0
 SRVID_SW
 $Comp
 L power:+3.3V #PWR0128
 U 1 1 5F3DAB15
-P 9500 2450
-F 0 "#PWR0128" H 9500 2300 50  0001 C CNN
-F 1 "+3.3V" H 9515 2623 50  0000 C CNN
-F 2 "" H 9500 2450 50  0001 C CNN
-F 3 "" H 9500 2450 50  0001 C CNN
-	1    9500 2450
+P 9900 2450
+F 0 "#PWR0128" H 9900 2300 50  0001 C CNN
+F 1 "+3.3V" H 9915 2623 50  0000 C CNN
+F 2 "" H 9900 2450 50  0001 C CNN
+F 3 "" H 9900 2450 50  0001 C CNN
+	1    9900 2450
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 5F3C5F82
-P 9600 850
-F 0 "#PWR0121" H 9600 600 50  0001 C CNN
-F 1 "GND" H 9605 677 50  0000 C CNN
-F 2 "" H 9600 850 50  0001 C CNN
-F 3 "" H 9600 850 50  0001 C CNN
-	1    9600 850 
+P 10000 850
+F 0 "#PWR0121" H 10000 600 50  0001 C CNN
+F 1 "GND" H 10005 677 50  0000 C CNN
+F 2 "" H 10000 850 50  0001 C CNN
+F 3 "" H 10000 850 50  0001 C CNN
+	1    10000 850 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L MCU_Module:WeMos_D1_mini U1
 U 1 1 5F3B1E0C
-P 9600 1650
-F 0 "U1" H 9600 669 50  0000 C CNN
-F 1 "WeMos_D1_mini" H 9600 760 50  0000 C CNN
-F 2 "Module:WEMOS_D1_mini_light" H 9600 500 50  0001 C CNN
-F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 7750 500 50  0001 C CNN
-	1    9600 1650
+P 10000 1650
+F 0 "U1" H 10000 669 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 10000 760 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 10000 500 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 8150 500 50  0001 C CNN
+	1    10000 1650
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -776,30 +764,27 @@ F 3 "~" H 8450 850 50  0001 C CNN
 	1    8450 850 
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9200 1450 0    50   Input ~ 0
+Text GLabel 9600 1450 0    50   Input ~ 0
 CLED_SER
-Text GLabel 9200 1350 0    50   Input ~ 0
+Text GLabel 9600 1350 0    50   Input ~ 0
 CLED_RCLK
-Text GLabel 9200 1550 0    50   Input ~ 0
+Text GLabel 9600 1550 0    50   Input ~ 0
 CLED_SRCLK
-Text GLabel 8450 1350 0    50   Input ~ 0
+Text GLabel 8450 1850 0    50   Input ~ 0
 CLED_SRCLR_n
 Wire Wire Line
 	8450 1050 8450 1250
 Wire Wire Line
 	8450 1250 8350 1250
-Wire Wire Line
-	8450 1250 8450 1350
-Connection ~ 8450 1250
 $Comp
 L power:+5VA #PWR0126
 U 1 1 5F47D20F
-P 9700 2450
-F 0 "#PWR0126" H 9700 2300 50  0001 C CNN
-F 1 "+5VA" H 9715 2623 50  0000 C CNN
-F 2 "" H 9700 2450 50  0001 C CNN
-F 3 "" H 9700 2450 50  0001 C CNN
-	1    9700 2450
+P 10100 2450
+F 0 "#PWR0126" H 10100 2300 50  0001 C CNN
+F 1 "+5VA" H 10115 2623 50  0000 C CNN
+F 2 "" H 10100 2450 50  0001 C CNN
+F 3 "" H 10100 2450 50  0001 C CNN
+	1    10100 2450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -825,10 +810,10 @@ F 3 "" H 7300 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+12VA #PWR?
+L power:+12VA #PWR0110
 U 1 1 5F49C765
 P 750 4450
-F 0 "#PWR?" H 750 4300 50  0001 C CNN
+F 0 "#PWR0110" H 750 4300 50  0001 C CNN
 F 1 "+12VA" H 765 4623 50  0000 C CNN
 F 2 "" H 750 4450 50  0001 C CNN
 F 3 "" H 750 4450 50  0001 C CNN
@@ -836,10 +821,10 @@ F 3 "" H 750 4450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+12VA #PWR?
+L power:+12VA #PWR0113
 U 1 1 5F49E0B2
 P 2500 3600
-F 0 "#PWR?" H 2500 3450 50  0001 C CNN
+F 0 "#PWR0113" H 2500 3450 50  0001 C CNN
 F 1 "+12VA" V 2515 3728 50  0000 L CNN
 F 2 "" H 2500 3600 50  0001 C CNN
 F 3 "" H 2500 3600 50  0001 C CNN
@@ -847,4 +832,92 @@ F 3 "" H 2500 3600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 2500 3600
+$Comp
+L power:GND #PWR0131
+U 1 1 5F50162B
+P 5750 1050
+F 0 "#PWR0131" H 5750 800 50  0001 C CNN
+F 1 "GND" H 5755 877 50  0000 C CNN
+F 2 "" H 5750 1050 50  0001 C CNN
+F 3 "" H 5750 1050 50  0001 C CNN
+	1    5750 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 950  5700 1000
+Wire Wire Line
+	5700 1000 5750 1000
+Wire Wire Line
+	5750 1000 5750 1050
+$Comp
+L Connector_Generic:Conn_01x05 J16
+U 1 1 5F53E35D
+P 5300 1800
+F 0 "J16" V 5264 1512 50  0000 R CNN
+F 1 "CLED" V 5173 1512 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 5300 1800 50  0001 C CNN
+F 3 "~" H 5300 1800 50  0001 C CNN
+	1    5300 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Jumper JP6
+U 1 1 5F53F291
+P 8450 1550
+F 0 "JP6" V 8404 1676 50  0000 L CNN
+F 1 "PWM1_4" V 8495 1676 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8450 1550 50  0001 C CNN
+F 3 "~" H 8450 1550 50  0001 C CNN
+	1    8450 1550
+	0    1    1    0   
+$EndComp
+Connection ~ 8450 1250
+Text GLabel 5100 2000 3    50   Input ~ 0
+CLED_VCC
+Text GLabel 5200 2000 3    50   Input ~ 0
+CLED_SRCLR_n
+Text GLabel 5300 2000 3    50   Input ~ 0
+CLED_SRCLK
+Text GLabel 5400 2000 3    50   Input ~ 0
+CLED_RCLK
+Text GLabel 5500 2000 3    50   Input ~ 0
+CLED_SER
+Text GLabel 1600 1100 2    50   Input ~ 0
+SMBUS_VCC
+Text GLabel 1600 900  2    50   Input ~ 0
+SMBUS_SDA
+Text GLabel 1100 900  0    50   Input ~ 0
+SMBUS_SCL
+Text GLabel 1600 1000 2    50   Input ~ 0
+BP_UNKN
+$Comp
+L Connector_Generic:Conn_01x05 J17
+U 1 1 5F55441C
+P 4050 900
+F 0 "J17" V 4014 612 50  0000 R CNN
+F 1 "BP_SMBUS" V 3923 612 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 4050 900 50  0001 C CNN
+F 3 "~" H 4050 900 50  0001 C CNN
+	1    4050 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5F556712
+P 3850 1100
+F 0 "#PWR0132" H 3850 850 50  0001 C CNN
+F 1 "GND" H 3855 927 50  0000 C CNN
+F 2 "" H 3850 1100 50  0001 C CNN
+F 3 "" H 3850 1100 50  0001 C CNN
+	1    3850 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 1100 3    50   Input ~ 0
+SMBUS_VCC
+Text GLabel 4050 1100 3    50   Input ~ 0
+SMBUS_SCL
+Text GLabel 4150 1100 3    50   Input ~ 0
+SMBUS_SDA
+Text GLabel 4250 1100 3    50   Input ~ 0
+BP_UNKN
 $EndSCHEMATC
