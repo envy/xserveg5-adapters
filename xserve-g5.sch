@@ -172,23 +172,23 @@ F 3 "" H 2450 1150 50  0001 C CNN
 	1    2450 1150
 	0    1    1    0   
 $EndComp
-Text GLabel 3250 950  2    50   Input ~ 0
+Text GLabel 2750 950  0    50   Input ~ 0
 TACH1
-Text GLabel 3250 1050 2    50   Input ~ 0
+Text GLabel 2750 1050 0    50   Input ~ 0
 TACH2
-Text GLabel 3250 1250 2    50   Input ~ 0
+Text GLabel 2750 1250 0    50   Input ~ 0
 TACH3
-Text GLabel 3250 1350 2    50   Input ~ 0
+Text GLabel 2750 1350 0    50   Input ~ 0
 TACH4
 Wire Wire Line
 	3250 1150 3500 1150
 Wire Wire Line
 	2750 1150 2450 1150
-Text GLabel 2100 3400 2    50   Input ~ 0
+Text GLabel 1600 3400 0    50   Input ~ 0
 TACH5
-Text GLabel 2100 3500 2    50   Input ~ 0
+Text GLabel 1600 3500 0    50   Input ~ 0
 TACH6
-Text GLabel 2100 3700 2    50   Input ~ 0
+Text GLabel 1600 3700 0    50   Input ~ 0
 TACH7
 $Comp
 L power:GND #PWR0111
@@ -233,19 +233,19 @@ F 3 "" H 1250 2050 50  0001 C CNN
 $EndComp
 Text GLabel 1450 2050 3    50   Input ~ 0
 TACH1
-Text GLabel 2750 950  0    50   Input ~ 0
+Text GLabel 3250 950  2    50   Input ~ 0
 PWM1
-Text GLabel 2750 1050 0    50   Input ~ 0
+Text GLabel 3250 1050 2    50   Input ~ 0
 PWM2
-Text GLabel 2750 1250 0    50   Input ~ 0
+Text GLabel 3250 1250 2    50   Input ~ 0
 PWM3
-Text GLabel 2750 1350 0    50   Input ~ 0
+Text GLabel 3250 1350 2    50   Input ~ 0
 PWM4
-Text GLabel 1600 3400 0    50   Input ~ 0
+Text GLabel 2100 3400 2    50   Input ~ 0
 PWM5
-Text GLabel 1600 3500 0    50   Input ~ 0
+Text GLabel 2100 3500 2    50   Input ~ 0
 PWM6
-Text GLabel 1600 3700 0    50   Input ~ 0
+Text GLabel 2100 3700 2    50   Input ~ 0
 PWM7
 $Comp
 L power:GND #PWR0114
